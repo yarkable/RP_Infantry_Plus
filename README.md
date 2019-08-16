@@ -41,7 +41,7 @@
 
 在参考了众多的优秀开源代码后，我们也构思出了一套稳定的识别装甲板的方案。在 6m 内的识别准确率几乎 100% ，加上 ROI 操作和多线程，处理一张图片的时间在 1ms 以内，整个程序跑下来也只需要 4-6ms ，时延非常低，方便更好地做移动预测。并且预处理对不同曝光也很适应，适用曝光范围在 3000-6000（各工业相机参数不同，这里仅针对 Dahua 此型号相机）。
 
-![此为效果图](/home/kevin/桌面/201908141134351565796875929_small.gif)
+![此为效果图](https://github.com/yarkable/RP_Infantry_Plus/blob/master/assets/autoaim.gif)
 
 ### 大小符识别
 
@@ -49,7 +49,7 @@
 
 附上效果图：
 
-![此为效果图](/home/kevin/桌面/rune_desc.jpg)
+![此为效果图](https://github.com/yarkable/RP_Infantry_Plus/blob/master/assets/rune_desc.jpg)
 
 ## 3.依赖环境
 
@@ -143,7 +143,7 @@ RP_Infantry_Plus/
 
 自瞄系统的逻辑流程很简单，通过面向对象思想将整一套流程实现，配合多线程使用，整体通俗易懂，以下是自瞄流程图：
 
-![流程图](/home/kevin/桌面/peocess.png)
+![流程图](https://github.com/yarkable/RP_Infantry_Plus/blob/master/assets/peocess.png)
 
 
 #### 基本原理
@@ -179,11 +179,11 @@ RP_Infantry_Plus/
 
 7. 哨兵比较特殊，我们对其进行了特殊处理，如果接收到电控传来哨兵模式，我们会对其装甲板匹配条件进行宽松处理，并且对其用上多分类识别装甲板贴纸上的 ID ，在10帧之内如果未找到目标依旧给电控发送找到目标的标志位，直到超过上述帧数才发送未识别到目标，这样子防止了灯条被打灭就失去目标导致云台突然停一下的问题，打灭了之后云台依旧会向前运动，可以快速推掉哨兵。
 
-![判别思路](/home/kevin/桌面/algo.png)
+![判别思路](https://github.com/yarkable/RP_Infantry_Plus/tree/master/assets/algo.png)
 
 ### 大小符击打
 
-![流程图](/home/kevin/桌面/rune_process)
+![流程图](https://github.com/yarkable/RP_Infantry_Plus/tree/master/assets/rune_process)
 
 #### 基本原理
 1. 在 `include/Detect.h` 中的 `sParam.use_yolo` 变为 1，则使用 yolo 来检测没有打过的扇叶，若为 0 则根据 `lastData` 是否有效来进行 ROI 区域的检测。
@@ -220,7 +220,7 @@ RP_Infantry_Plus/
 
 7. 对得到的装甲板的数据进行保存和发送。其中装甲板的象限数据是通过箭头坐标以及旋转矩形的角度进行确定。圆心是通过象限以及给定的半径进行确定。
 
-![大符预测](/home/kevin/桌面/rune_algo.png)
+![大符预测](https://github.com/yarkable/RP_Infantry_Plus/tree/master/assets/rune_algo.png)
 
 ## 6.通讯协议
 
