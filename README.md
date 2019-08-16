@@ -179,11 +179,11 @@ RP_Infantry_Plus/
 
 7. 哨兵比较特殊，我们对其进行了特殊处理，如果接收到电控传来哨兵模式，我们会对其装甲板匹配条件进行宽松处理，并且对其用上多分类识别装甲板贴纸上的 ID ，在10帧之内如果未找到目标依旧给电控发送找到目标的标志位，直到超过上述帧数才发送未识别到目标，这样子防止了灯条被打灭就失去目标导致云台突然停一下的问题，打灭了之后云台依旧会向前运动，可以快速推掉哨兵。
 
-![判别思路](https://github.com/yarkable/RP_Infantry_Plus/tree/master/assets/algo.png)
+![判别思路](https://ae01.alicdn.com/kf/H13ce20c8449e4464b3cfb63e71d4d4e1F.png)
 
 ### 大小符击打
 
-![流程图](https://github.com/yarkable/RP_Infantry_Plus/tree/master/assets/rune_process)
+![流程图](https://ae01.alicdn.com/kf/Hfec6496fe62c4334a737048fa5700ad0a.jpg)
 
 #### 基本原理
 1. 在 `include/Detect.h` 中的 `sParam.use_yolo` 变为 1，则使用 yolo 来检测没有打过的扇叶，若为 0 则根据 `lastData` 是否有效来进行 ROI 区域的检测。
@@ -220,7 +220,7 @@ RP_Infantry_Plus/
 
 7. 对得到的装甲板的数据进行保存和发送。其中装甲板的象限数据是通过箭头坐标以及旋转矩形的角度进行确定。圆心是通过象限以及给定的半径进行确定。
 
-![大符预测](https://github.com/yarkable/RP_Infantry_Plus/tree/master/assets/rune_algo.png)
+![大符预测](https://ae01.alicdn.com/kf/Ha4fd6dba0079447c8c6c7d0ddb121249Y.png)
 
 ## 6.通讯协议
 
