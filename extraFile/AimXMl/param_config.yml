@@ -1,0 +1,38 @@
+%YAML:1.0
+---
+# 
+# For Debug Image
+show_image: 1
+save_result: 0
+# 
+# 
+# Parameter for Armor Detection System
+min_light_height: 10
+light_slope_offset: 30
+max_light_delta_h: 720
+min_light_delta_h: 20
+# 近的时候就很大
+max_light_delta_v: 100 #36 #20
+# 之前是20
+max_light_delta_angle: 30
+near_face_v: 100
+max_lr_rate: 1.99
+max_wh_ratio: 5.12
+min_wh_ratio: 1.03
+target_max_angle: 20
+small_armor_wh_threshold: 3.33
+binary_classfication_threshold: 166
+
+#
+# 
+# Parameter for Camera
+intrinsic_file_720: "/home/nuc/kevin/RP_Infantry_Plus/extraFile/AimXMl/calib_no_4_1280.yml"
+exposure_time: 30 # 48
+saturation_blue: 60
+saturation_red: 100
+# 
+# 
+# Scale factor of Z
+scale_z: 1.4703999999999999e+00
+
+
