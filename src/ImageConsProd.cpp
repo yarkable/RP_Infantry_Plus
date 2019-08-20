@@ -1,7 +1,6 @@
 #include "include/ImageConsProd.hpp"
 #include "include/Aim/AngleSolver.hpp"
 #include "include/SerialPort/serialport.h"
-#include "include/Aim/separate.h"
 #include "include/header.h"
 #include "include/SerialPort/CRC_Check.h"
 #include "include/Rune/Detect.h"
