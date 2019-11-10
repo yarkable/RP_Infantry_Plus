@@ -17,7 +17,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp \
     src/Aim/AngleSolver.cpp \
     src/Aim/ArmorDetector.cpp \
-    src/Aim/separate.cpp \
     src/Camera/RMVideoCapture.cpp \
     src/Camera/v4l2.cpp \
     src/Camera/video.cpp \
@@ -48,7 +47,6 @@ INCLUDEPATH = ./includes
 HEADERS += \
     include/Aim/AngleSolver.hpp \
     include/Aim/ArmorDetector.hpp \
-    include/Aim/separate.h \
     include/Aim/Settings.hpp \
     include/Camera/RMVideoCapture.h \
     include/Camera/v4l2.h \
