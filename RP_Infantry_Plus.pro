@@ -17,8 +17,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp \
     src/Aim/AngleSolver.cpp \
     src/Aim/ArmorDetector.cpp \
-    src/Camera/RMVideoCapture.cpp \
-    src/Camera/v4l2.cpp \
     src/Camera/video.cpp \
     src/Rune/ArmorFind.cpp \
     src/Rune/Detect.cpp \
@@ -48,8 +46,6 @@ HEADERS += \
     include/Aim/AngleSolver.hpp \
     include/Aim/ArmorDetector.hpp \
     include/Aim/Settings.hpp \
-    include/Camera/RMVideoCapture.h \
-    include/Camera/v4l2.h \
     include/Camera/video.h \
     include/Rune/ArmorFind.h \
     include/Rune/Detect.h \
