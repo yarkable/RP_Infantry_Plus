@@ -18,12 +18,7 @@ SOURCES += main.cpp \
     src/Aim/AngleSolver.cpp \
     src/Aim/ArmorDetector.cpp \
     src/Camera/video.cpp \
-    src/Rune/ArmorFind.cpp \
     src/Rune/Detect.cpp \
-    src/Rune/PoseSlover.cpp \
-    src/Rune/solvePnp.cpp \
-    src/Rune/traditionDetect.cpp \
-    src/Rune/yolodDectect.cpp \
     src/SerialPort/CRC_Check.cpp \
     src/SerialPort/serialport.cpp \
     src/ImageConsProd.cpp
@@ -47,12 +42,7 @@ HEADERS += \
     include/Aim/ArmorDetector.hpp \
     include/Aim/Settings.hpp \
     include/Camera/video.h \
-    include/Rune/ArmorFind.h \
     include/Rune/Detect.h \
-    include/Rune/PoseSlover.h \
-    include/Rune/solvePnp.h \
-    include/Rune/traditionDetect.h \
-    include/Rune/yoloDectect.h \
     include/SerialPort/CRC_Check.h \
     include/SerialPort/serialport.h \
     include/header.h \

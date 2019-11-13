@@ -1,6 +1,6 @@
 #ifndef DETECT_H
 #define DETECT_H
-#include <header.h>
+#include "header.h"
 
 #define NO_TARGET -1
 #define MAX_NUM 921600
