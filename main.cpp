@@ -1,6 +1,5 @@
 #include "include/ImageConsProd.hpp"
 #include "include/Aim/Settings.hpp"
-#include "include/Camera/v4l2.h"
 #include <thread>
 
 using namespace cv;
