@@ -19,7 +19,7 @@
 
 如有相关疑问，可以咨询相关人员，欢迎大家一起讨论交流，微信联系方式如下：
 
-* 陈晓嘉(大小符) chanxj_ 
+* 陈晓嘉(大小符) JosonChan1998 
 * 叶凯(自瞄) sk8_brings_much
 
 ## Table Of Contents
